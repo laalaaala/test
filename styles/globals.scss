@@ -1,0 +1,119 @@
+//@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap");
+
+/* @font-face {
+    font-family: "Poppins";
+    src: local("Poppins"), url("./../fonts/Poppins-Black.ttf");
+    font-style: normal;
+    font-display: swap;
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    ul {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    html {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    body {
+        background: var(--color-bg);
+    }
+    button {
+        border: none;
+        cursor: pointer;
+    }
+    scroll-behavior: smooth;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 4rem;
+    @media screen and (max-width: 768px) {
+        padding: 1rem 2rem;
+    }
+    @media screen and (max-width: 550px) {
+        padding: 1rem 1.2rem;
+    }
+    @media screen and (min-width: 1500px) {
+        margin: auto;
+        width: 1500px;
+    }
+}
+
+.page {
+    background: var(--color-darkest);
+    min-height: 100vh;
+}
+
+.dark {
+    --color-dark: black;
+    --color-darker: black;
+    --color-darkest: linear-gradient(to bottom, #000000 24%, #696969 160%);
+    --color-dark-light: rgba(6, 6, 6, 0.7);
+    --color-white: white;
+    --color-gray-100: #acacac;
+    --color-gray-200: #1e1e1e;
+    --color-gray-300: #0f0f11;
+    --color-svg-dark: var(--color-white);
+    --color-svg-light: white;
+    --color-nav: var(--color-white);
+    --color-border-dark: rgb(54, 54, 54);
+    --shadow-primary: 0 0 20px 5px rgba(251, 83, 67, 0.2);
+    --color-primary: #059dff;
+    --color-primary-dark: #011827;
+    --color-tertiary: #6549d5;
+    --color-tertiary-dark: #150b40;
+    --color-pink: #e33fa1;
+    --color-pink-dark: #2f011d;
+    --color-secondary: #fb5343;
+    --color-secondary-dark: #190301;
+    --color-gradient-1: linear-gradient(
+            95deg,
+            var(--color-primary) 15%,
+            var(--color-tertiary) 45%,
+            var(--color-pink) 75%,
+            var(--color-secondary) 100%
+        )
+        95%/200% 100%;
+}
+
+.light {
+    //navbar scrolled
+    --color-darker: #f5f8fa;
+
+    //bg
+    --color-darkest: white;
+
+    //navbar
+    --color-dark-light: #f5f8fa;
+    --color-white: #181818;
+    --color-gray-100: #595b5e;
+    --color-gray-200: #c5c5c5;
+    --color-gray-300: #f5f5f5;
+    --color-selected: #e0e0e0;
+    //navbar icon font
+    --color-nav: rgb(31, 31, 31);
+
+    //svg color
+    --color-svg-dark: white;
+    --color-svg-light: black;
+
+    //button Hover
+    --shadow-primary: 0 0 6px 3px rgba(251, 83, 67, 0.2);
+
+    //services backgrounds
+    --color-primary-dark: #f0f9ff;
+    --color-tertiary-dark: #ece9fa;
+    --color-pink-dark: #fcdbef;
+    --color-secondary-dark: #ffedec;
+}
